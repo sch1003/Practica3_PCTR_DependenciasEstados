@@ -75,14 +75,18 @@ public class Parque implements IParque{
 	}
 
 	protected void comprobarAntesDeEntrar(){	// TODO
+		
+		assert contadorPersonasTotales < 40 :"El parque esta completo. espera a que haya sitio";
 		//
 		// TODO
 		//
 	}
 
 	protected void comprobarAntesDeSalir(){		// TODO
+		assert contadorPersonasTotales < 0 :"El parque esta vacio.No puede salir nadie";
 		//
 		// TODO
+		
 		//
 	}
 
