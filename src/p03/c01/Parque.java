@@ -45,6 +45,22 @@ public class Parque implements IParque{
 	
 	// 
 	// TODO Método salirDelParque
+public void salirDelParque(String puerta){		// TODO
+		
+				
+		// Decrementamos el contador total y el individual
+		contadorPersonasTotales--;		
+		contadoresPersonasPuerta.put(puerta, contadoresPersonasPuerta.get(puerta)-1);
+		
+		// Imprimimos el estado del parque
+		imprimirInfo(puerta, "Salida");
+		
+		// TODO
+		
+		
+		// TODO
+		
+	}
 	//
 	
 	
@@ -76,7 +92,7 @@ public class Parque implements IParque{
 
 	protected void comprobarAntesDeEntrar(){	// TODO
 		
-		assert contadorPersonasTotales < 40 :"El parque esta completo. espera a que haya sitio";
+		assert contadorPersonasTotales < 50 :"El parque esta completo. espera a que haya sitio";
 		//
 		// TODO
 		//
